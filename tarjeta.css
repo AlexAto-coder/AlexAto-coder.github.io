@@ -1,0 +1,131 @@
+html{
+    font-size: 10px;
+}
+body{
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+}
+.layout{
+    width: 100%;
+    min-height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8eded;
+}
+.layout__card{
+    display: flex;
+    flex-direction: row;
+    max-width: 86rem;
+    height: 38rem;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+.card__container-img{
+    width: 40%;
+    flex-basis: 100%;
+}
+.card__content{
+    flex-basis: 70%;
+    height: 100%;
+    padding: 3rem 4rem;
+}
+.card__title{
+    font-size: 2rem;
+    line-height: 1.4;
+    color: #3f7080;
+    margin-bottom: 1.5rem;
+}
+.card__description{
+    font-size: 1.4rem;
+    color: #acaabd;
+    margin-bottom: 2rem;
+}
+.card__user{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.user__info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+.user__container-name{
+    display: flex;
+    flex-direction: column;
+}
+.user__name{
+    font-size: 1.4rem;
+    color: #444;
+    font-weight: 600;
+}
+.user__date{
+    font-size: 1.4rem;
+    color: #898D8F;
+    font-weight: 600;
+}
+.user__container-img{
+    width: 5rem;
+    height: 5rem;
+}
+.user__img{
+    width: 30%;
+    height: 30%;
+    border-radius: 100%;
+}
+.user__icon{
+    background-color: #00a7db;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 100%;
+    width: 4rem;
+    height: 4rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 300ms ease;
+    cursor: pointer;
+}
+.user__icon:hover{
+    background-color: #3f7080;
+}
+/*Estilos para el header*/
+header{
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    margin: 8px auto;
+}
+.header-name{
+    font-size: 30px;
+    line-height: 36px;
+    color: #111827;
+}
+.header-inicio{
+    font-size: 16px;
+    line-height: 24px;
+    color: #bb2777;
+}
+.header-button{
+    background-color: #bb2777;
+    color: white;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+a{
+    text-decoration: none;
+}
+nav{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}

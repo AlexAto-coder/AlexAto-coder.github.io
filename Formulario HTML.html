@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario html</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="header-name">Alex Ato</a>
+        <nav>
+          <a href="index.html" class = "header-inicio">Inicio</a>
+          <a href="portafolio.html" class = "header-button">Portafolio</a>
+       </nav>
+      </header>
+
+    <h2>Formulario completo</h2>
+    <p>El siguiente formulario tiene un campo de tipo textarea, email, contraseña,
+        radio, select, checkbox, fichero, fecha, número, color y submit.
+        Todos los campos constan de un fieldset  y usan el campo legend. 
+       
+    </p>
+
+    <form>
+        <fieldset>
+            <legend>Descripción</legend>
+            <label for="descripcion">Introduce una descripción</label><br>
+            <textarea name="descripcion" id="descripcion"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Correo electrónico</legend>
+            <label for="email">E-mail</label><br>
+            <input type="text" id="email" placeholder="Ingresa tu E-mail..">
+        </fieldset>
+
+        <fieldset>
+            <legend>Campo   Radio</legend>
+            <label for="edad">Edad:</label>
+
+            <input type="radio" name="edad" id="mayor"/>
+            <label for="mayor">Mayor de edad</label>
+
+            <input type="radio" name="edad" id="menor"/>
+            <label for="menor">Menor de edad</label>
+
+            <input type="radio" name="edad" id="mayor65"/>
+            <label for="mayor65">Mayor de 65</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Select</legend>
+            <label for="comidas">Comidas</label>
+            <select>
+                <option>Tallarín</option>
+                <option>Arróz</option>
+                <option>Pescado</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Checkbox</legend>
+            <label for="vegano">Vegano:</label>
+            <input type="checkbox" name="vegano" id="vegano">
+        </fieldset>
+
+        <fieldset>
+            <legend>Archivo</legend>
+            <label for="archivo">Archivo</label>
+            <input type="file" name="archivo" id="archivo">
+        </fieldset>
+
+        <fieldset>
+            <legend>Fecha</legend>
+            <label for="fecha">Fecha:</label>
+            <input type="date" name="fecha" id="fecha">
+        </fieldset>
+
+        <fieldset>
+            <legend>Número</legend>
+            <label for="numero">Número:</label>
+            <input type="number" name="numero" id="numero">
+        </fieldset>
+
+        <fieldset>
+            <legend>Color</legend>
+            <label for="color">Color:</label>
+            <input type="color" name="color" id="color">
+        </fieldset>
+        <br>
+        <input type="submit" value="Enviar Formulario"/>
+    </form>
+
+</body>
+</html>
